@@ -1,55 +1,118 @@
+/* General styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #f8f9fa;
   color: #333;
 }
 
+/* Header styles */
 header {
   text-align: center;
-  padding: 2rem;
-  background-color: #6200ea;
+  padding: 2.5rem 1rem;
+  background: linear-gradient(135deg, #ffb3c6, #ffc9de);
   color: white;
+  border-bottom: 4px solid #ff9aae;
+}
+
+header .header-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Navigation styles */
+nav {
+  background: #fff3e4;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  background: #333;
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
 }
 
 nav ul li {
-  margin: 0;
+  margin: 0 1rem;
 }
 
 nav ul li a {
-  display: block;
-  padding: 0.75rem 1.5rem;
-  color: white;
+  color: #ff6f61;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-  background: #6200ea;
+  color: #ff9aae;
+  text-decoration: underline;
 }
 
+/* Main content */
 main {
-  padding: 1rem 2rem;
+  padding: 1.5rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-section {
-  margin-bottom: 2rem;
+section.card {
+  background: #ffffff;
+  border: 2px solid #ffc9de;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+section.card h2 {
+  color: #ff6f61;
+}
+
+section.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer styles */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #333;
+  background: #ffb3c6;
   color: white;
   margin-top: 2rem;
+  border-top: 4px solid #ff9aae;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  section.card {
+    padding: 1rem;
+  }
 }
